@@ -7,22 +7,24 @@ document.addEventListener('DOMContentLoaded', function() {
     attribution: '© OpenStreetMap'
   }).addTo(mapa);
 
-  // 3. Cargar datos de WAQI
-  const API_KEY = '21fea361d006b91a5a70501dc251b23df6465dd3'; // Clave de la API
-  fetch(`https://api.waqi.info/map/bounds/?token=${API_KEY}&latlng=-90,-180,90,180`) // Datos que va a mostrar waqi
+   // 3. Cargar datos de WAQI mediante la función Netlify (proxy)
+  const proxyUrl = '/.netlify/functions/waqi-proxy?latlng=-90,-180,90,180';
+
+  fetch(proxyUrl)
     .then(response => response.json())
     .then(data => {
+      if (!data || !data.data) {
+        throw new Error('Respuesta inválida desde el proxy');
+      }
       data.data.forEach(estacion => {
         const aqi = estacion.aqi;
         let color, icono;
 
-        // Definir color según AQI
         if (aqi <= 50) { color = '#4CAF50'; icono = 'bi-emoji-smile'; } 
         else if (aqi <= 100) { color = '#FFC107'; icono = 'bi-emoji-neutral'; }
         else if (aqi <= 150) { color = '#FF5722'; icono = 'bi-emoji-frown'; }
         else { color = '#795548'; icono = 'bi-emoji-dizzy'; }
 
-        // Crear marcador
         L.circleMarker([estacion.lat, estacion.lon], {
           radius: 8,
           fillColor: color,
@@ -46,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
         </div>
       `;
     });
-});
+
 
 
 // Aparcen los elementos al hacer Scroll
@@ -104,4 +106,5 @@ function aparicionScroll () { // Se ejecuta la funcion una vez carguen los eleme
 
 //     fadeElements.forEach(el => observer.observe(el));
 //     // Y se le dice al observer que empiece a observar cada uno de los elementos con la clase .fade-scroll.
+
 //   });
