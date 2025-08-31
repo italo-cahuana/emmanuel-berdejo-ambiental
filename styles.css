@@ -1,0 +1,201 @@
+  /* PARALLAX */
+  .parallax {
+    background-image: url(src/img/fondo.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+  }
+  
+  /* Botones ecológicos */
+  .btn-eco {
+    background-color: #2e7d32;
+    border: 2px solid #2e7d32;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    /* border-radius: 30px; */
+  }
+  .btn-eco:hover {
+    background-color: transparent;
+    color: #2e7d32;
+  }
+  
+  /* Card Hover */
+  .card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 20px;
+    /* background: rgba(255, 255, 255, 0.7); */
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  .card-hover:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+  }
+  
+  /* Fade-in Animation */
+  .fade-in1 {
+    opacity: 0;
+    transform: translateY(25px);
+    animation: fadeInAnimation 1s ease-in forwards;
+    animation-delay: 0.4s;
+  }
+  .fade-in {
+    opacity: 0;
+    transform: translateY(25px);
+    animation: fadeInAnimation 1s ease-in forwards;
+    animation-delay: 1.2s;
+  }
+  @keyframes fadeInAnimation {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .ribbon {
+    position: absolute;
+    right: -5px; top: 10px;
+    background: #4CAF50;
+    padding: 5px 20px;
+    transform: rotate(45deg);
+    color: white;
+    font-size: 12px;
+  }
+  
+  
+  /* Estilos de navbar y offcanvas */
+  .navbar-custom, .btn-custom {
+    background-color: #2e7d32;
+    z-index: 1050; /* Superior a todo */
+  }
+  .carousel {
+    margin-top: 56px; /* Compensa la altura del navbar */
+    position: relative;
+    z-index: 1; /* Nivel inferior */
+  }
+  .offcanvas-custom {
+    width: 63% !important;
+    max-width: 400px;
+    background-color: rgba(46, 125, 50, 0.2) !important;
+    backdrop-filter: blur(5px);
+    color: white;
+    transition: all 0.5s ease; /* Suaviza cambios */
+  }
+  .btn-close {
+    filter: invert(1);
+  }
+
+   /* Navbar scroller personalisada */
+  .navbar-scrollspy {
+    background-color: #e8f5e9; /* verde muy claro, el mismo de tus cards */
+    border: 1px solid #c8e6c9; /* bordecito verde claro */
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  .nav-pills .nav-link.active,
+  .nav-pills .show > .nav-link {
+    background-color: #2e7d32; /* tu verde */
+    color: white; /* texto blanco para contraste */
+    font-weight: bold; /* opcional: para que se vea más fuerte */
+}
+  
+  /* Imagen y contenedores */
+  #imagensojo {
+    height: 270px;
+    width: 270px;
+    object-fit: cover;
+  }
+  /* .divintfoto {
+    background-color: #f1f8e9;
+  }
+  .bg-light-green {
+    background-color: #e8f5e9;
+  } */
+  
+  /* Textos */
+  .descripcion {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  }
+  .nombre {
+    color: #2e7d32;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  }
+  .color {
+    color: rgb(240, 240, 41);
+  }
+  .emmanuel {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #2e7d32;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    /* margin-top: -400000px; Ajusta según lo que necesites */
+  }
+
+  /* Animación de entrada */
+.fade-scroll {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+  }
+  
+  .fade-scroll.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .mpersonalisado {
+    margin-top: 15%;
+  }
+  @media (max-width: 420px) {
+    .mpersonalisado {
+      margin-top: 50%;
+    }
+  }
+  
+  /* Responsive */
+  @media (max-width: 420px) {
+    #imagensojo {
+      height: 200px;
+      width: 200px;
+    }
+  }
+  
+.personalizacion img {
+    height: 700px; /* Tamaño normal en pantallas grandes */
+    object-fit: cover; /* Ajusta bien la imagen sin deformarla */
+    width: 100%; /* Se mantiene adaptativo al ancho */
+    border-radius: 20px; /* Opcional: bordes redondeados para más estilo */
+}
+.caja {
+  background-color: #2e7d32;
+}
+/* En celulares */
+@media (max-width: 440px) {
+  .personalizacion img {
+    height: 400px;
+    margin: none;
+  }
+}
+
+.personalizacion1 img {
+  height: 700px; /* Tamaño normal en pantallas grandes */
+  width: 100%; /* Se mantiene adaptativo al ancho */
+  border-radius: 20px; /* Opcional: bordes redondeados para más estilo */
+  object-fit: cover; /* Ajusta bien la imagen sin deformarla */
+}
+
+@media (max-width: 440px) {
+  .personalizacion1 img {
+    height: 240px;
+    margin: none;
+  }
+}
+
+.flagsabanagrande {
+  width: 43px;
+}

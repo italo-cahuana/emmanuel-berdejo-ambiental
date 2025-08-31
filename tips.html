@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sabanagrande</title>
+</head>
+<body class="p-2">
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-dark navbar-custom rounded shadow">
+  <div class="container-fluid">
+    <button class="navbar-toggler me-2 px-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand fw-semibold nombreeco" href="#"></a>
+
+    <div class="offcanvas offcanvas-start offcanvas-custom" tabindex="-1" id="offcanvasNavbar">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title">Menú</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="acerca.html">Conoce a Emmanuel</a></li>
+          <li class="nav-item"><a class="nav-link active" href="tips.html">Sabanagrande</a></li>
+          <li class="nav-item"><a class="nav-link" href="tabla.html">Tabla Aqi</a></li>
+        </ul>
+      </div>
+    </div>
+    </div>
+  </nav>
+
+        <!-- NAVBAR SCROLLSPY -->
+        <nav id="navbar-example2" class="navbar bg-dark text-white px-3 mb-4 rounded shadow sticky-top">
+          <a class="navbar-brand fw-bold text-white" href="#">Descubre a Sabanagrande</a>
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link color" href="#scrollspyHeading1">Sabanagrande</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link color" href="#scrollspyHeading2">Fauna</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link color" href="#scrollspyHeading3">Turismo</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle color" data-bs-toggle="dropdown" href="#" role="button">Descubre más</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#scrollspyHeading4">Compromiso</a></li>
+                <li><a class="dropdown-item" href="#scrollspyHeading5">Galería</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        
+        <!-- CONTENIDO SCROLLSPY -->
+        <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-smooth-scroll="true" class="scrollspy-example bg-white p-4 rounded" tabindex="0">
+          
+          <h4 id="scrollspyHeading1" class="nombre">Sabanagrande, Atlántico: <br> Un Tesoro Natural y Cultural</h4>
+          <p class="fade-scroll">
+            Sabanagrande, ubicado en el corazón del departamento del Atlántico, es un <strong>municipio que combina tradición, biodiversidad y un fuerte compromiso comunitario.</strong> Con una temperatura calida y una geografía plana, su cercanía al río Magdalena le confiere una riqueza hídrica notable, alimentando por su gente pujante, tradición y su gran devoción que se refleja su fé.
+          </p>
+        
+          <h4 id="scrollspyHeading2" class="nombre fade-scroll">Fauna y Flora: Un Ecosistema Vibrante</h4>
+          <p class="fade-scroll">
+            La biodiversidad de Sabanagrande es un reflejo de su entorno natural. Entre las especies más comunes se encuentran <strong>el guásimo, la sansevieria, el palo de Brasil, el cacahuananche y la corona de Cristo.</strong> En cuanto a la fauna, destaca el Parques, centros recreacionales, un lugar donde se vive y se disfruta con el medio ambiente, ofreciendo a los visitantes una experiencia única.
+          </p>
+        
+          <h4 id="scrollspyHeading3" class="nombre fade-scroll"> Atractivos Turísticos: Naturaleza y Cultura</h4>
+          <p class="fade-scroll">
+            Sabanagrande ofrece diversos espacios para el disfrute y la recreación:<br>
+            <strong>• Malecón Turístico del Puerto del Río:</strong> Un paseo peatonal inaugurado en 2017 que se ha convertido en un punto de encuentro para locales y visitantes. <br>
+            <strong>• Centros Recreacionales:</strong> Lugares como Los Lagos, fincas recreativas, Villa Hawai y Las Cumbres ofrecen espacios con piscinas, canchas deportivas, ademas cuenta con restaurantes, tiendas de artesanías que promueven la cultura y la gastronomía típica.<br>
+            <strong>• Fiestas patronales:</strong> Santa Rita de Casia la patrona del municipio que junto con sus fiestas es un fiel reflejo de la fé de su gente no solo el lo espiritual si no el compromiso. <br>
+            <strong>• Iglesia Santa María Magdalena:</strong> Un ícono arquitectónico que refleja la historia y devoción de la comunidad. 
+          </p>
+        
+          <h4 id="scrollspyHeading4" class="nombre fade-scroll">Compromiso Comunitario y Proyección</h4>
+          <p class="fade-scroll">
+            Sabanagrande se distingue por su espíritu comunitario y su enfoque en el desarrollo sostenible. La población participa activamente en iniciativas que promueven la conservación del medio ambiente y el fortalecimiento de la identidad cultural. Este entorno ha sido fundamental en la formación de líderes comprometidos, como <strong>Emmanuel Berdejo Sarmiento, quien trabaja incansablemente por el bienestar de su comunidad y la protección de su entorno natural.</strong>
+          </p>
+
+          <div id="scrollspyHeading5">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button> <!-- Nuevo indicador -->
+                </div>
+        
+                <div class="carousel-inner personalizacion1">
+                    <div class="carousel-item active">
+                        <img src="src/img/malecon.jpeg" class="d-block w-100" alt="Malecón de Sabanagrande">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Malecón Turístico</h5>
+                            <p>Disfruta de caminatas junto al Río Magdalena en el Malecón de Sabanagrande.</p>
+                        </div>
+                    </div>
+        
+                    <div class="carousel-item personalizacion1">
+                        <img src="src/img/lago.jpg" class="d-block w-100" alt="Laguna El Convento">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Laguna El Convento</h5>
+                            <p>Un espacio natural perfecto para el avistamiento de aves y paseos ecológicos.</p>
+                        </div>
+                    </div>
+        
+                    <div class="carousel-item personalizacion1">
+                        <img src="src/img/inglesia.jpeg" class="d-block w-100" alt="Iglesia Santa María Magdalena">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Iglesia Santa María Magdalena</h5>
+                            <p>Un ícono religioso y arquitectónico del municipio.</p>
+                        </div>
+                    </div>
+        
+                    <div class="carousel-item personalizacion1">
+                        <img src="src/img/fauna1.jpg" class="d-block w-100" alt="Parque Crocodilia">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Parque Ecológico Crocodilia</h5>
+                            <p>Un santuario de cocodrilos y babillas en el corazón de Sabanagrande.</p>
+                        </div>
+                    </div>
+        
+                    <div class="carousel-item personalizacion1">
+                        <img src="src/img/letras.jpg" class="d-block w-100" alt="Plaza Central de Sabanagrande">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Plaza Central</h5>
+                            <p>Centro de encuentro cultural y social del municipio.</p>
+                        </div>
+                    </div>
+        
+                    <div class="carousel-item personalizacion1">
+                        <img src="src/img/lagos2.jpg" class="d-block w-100" alt="Descripción de la nueva imagen">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Título de la nueva imagen</h5>
+                            <p>Descripción del nuevo atractivo turístico o lugar.</p>
+                        </div>
+                    </div>
+        
+                    <!-- Nuevo div para la séptima imagen -->
+                    <div class="carousel-item personalizacion1">
+                        <img src="src/img/fatima.jpg" class="d-block w-100" alt="Descripción de la nueva imagen">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Título de la séptima imagen</h5>
+                            <p>Descripción del nuevo atractivo turístico o lugar.</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+          
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+              </button>
+            </div>
+          </div>
+          
+        
+          <!-- TARJETA DE CONTACTO -->
+          <div class="card text-center my-3 border-2 p-0 rounded-4 shadow">
+            <div class="card-body">
+              <h5 class="card-title">¿Quieres saber más sobre Sabanagrande y como los jovenes estan contribuyendo?</h5>
+              <p class="card-text">Vsisita las redes sociales de Plataforma Juventudes de Sabanagrande</p>
+              <a href="https://www.instagram.com/plataforma.juventudes_sgrande/?hl=es" target="_blank" class="btn btn-outline-dark me-2">
+                <i class="bi bi-instagram"></i> Instagram
+              </a>
+              <!-- <a href="https://wa.me/TU_NUMERO" target="_blank" class="btn btn-outline-primary me-2">
+                <i class="bi bi-linkedin"></i> LinkedIn
+              </a> -->
+            </div>
+          </div>
+        
+        </div>
+        <!-- BOOTSTRAP ICONS + SCRIPTS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="script.js"></script>
+</body>
+</html>
